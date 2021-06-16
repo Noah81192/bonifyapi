@@ -8,17 +8,18 @@ Pease make a file in you bot and name it bonify.js otherwise this will not work 
 # Define Module & Client
 
 
-``const Discord = require("discord.js");
+const Discord = require("discord.js");
 const client = new Discord.Client();
 const vBonify = require("./bonify.js");
 const dbl = new vBonify("TOKEN-HERE", client);
 
 
 client.login("MTk4NjIyNDgzNDcxOTI1MjQ4.Cl2FMQ.ZnCjm1XVW7vRze4b7Cq4se7kKWs");
-``
+
 
 # Server Count & Shard Count Posting
-``
+
+
 client.on("ready", async () => {
   dbl.serverCount();
   /* 
@@ -27,20 +28,22 @@ client.on("ready", async () => {
   -> Server count & shard count posted.
   */
 
-});``
+});
 
 # Vote Checking
 
 
-``let hasVote = await dbl.hasVoted("714451348212678658"); // -> User ID
+let hasVote = await dbl.hasVoted("714451348212678658"); // -> User ID
   if(hasVote === true) {
       console.log("Voted")
     } else {
       console.log("Vote please.")
   }
-// -> Vote please.``
+// -> Vote please.
 
 
 # Search on Bonify
-``let botFind = await dbl.search("779641401482805289");
-console.log(botFind.username) // -> Allegro``
+
+
+let botFind = await dbl.search("779641401482805289");
+console.log(botFind.username) // -> Allegro
