@@ -5,7 +5,7 @@ If you have trouble with the installation, please feel free to visit our discord
 
 # Define Module & Client
 
-Make a ne file in you bot andd name it bonify.js
+Make a file in you bot and name it bonify.js
 
 ``const Discord = require("discord.js");
 const client = new Discord.Client();
